@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Parcel Tracker",
+        "description": "Встановити інтеграцію для відстеження посилок Нова пошта, Укрпошта та Meest Express?"
+      }
+    },
+    "abort": {
+      "already_configured": "Інтеграцію вже налаштовано"
+    }
+  }
+}

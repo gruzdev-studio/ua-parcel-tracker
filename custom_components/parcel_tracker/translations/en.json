@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Parcel Tracker",
+        "description": "Set up parcel tracking for Nova Poshta, Ukrposhta and Meest Express?"
+      }
+    },
+    "abort": {
+      "already_configured": "Integration is already configured"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "domain": "parcel_tracker",
+  "name": "Parcel Tracker",
+  "codeowners": ["@your_github"],
+  "config_flow": true,
+  "documentation": "https://github.com/your_github/ha-parcel-tracker",
+  "issue_tracker": "https://github.com/your_github/ha-parcel-tracker/issues",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.1.0"
+}
