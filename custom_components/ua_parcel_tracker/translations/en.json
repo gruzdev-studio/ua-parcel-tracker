@@ -3,11 +3,49 @@
     "step": {
       "user": {
         "title": "UA Parcel Tracker",
-        "description": "Set up parcel tracking for Nova Poshta, Ukrposhta and Meest Express?"
+        "description": "Enter your Nova Poshta API key from your personal account. Parcels are added later in the integration options.",
+        "data": {
+          "api_key": "Nova Poshta API key"
+        }
       }
+    },
+    "error": {
+      "invalid_api_key": "API key cannot be empty"
     },
     "abort": {
       "already_configured": "Integration is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Parcels",
+        "menu_options": {
+          "add_parcel": "Add parcel",
+          "remove_parcel": "Remove parcel"
+        }
+      },
+      "add_parcel": {
+        "title": "New parcel",
+        "data": {
+          "number": "Tracking number (14 digits)",
+          "phone": "Recipient phone (optional)",
+          "name": "Name (optional)"
+        }
+      },
+      "remove_parcel": {
+        "title": "Remove parcels",
+        "data": {
+          "numbers": "Parcels"
+        }
+      }
+    },
+    "error": {
+      "invalid_number": "Tracking number must have 14 digits",
+      "already_exists": "This parcel is already added"
+    },
+    "abort": {
+      "no_parcels": "No parcels added"
     }
   }
 }
