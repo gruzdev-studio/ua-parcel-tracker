@@ -36,14 +36,25 @@ STATUS_CODES: dict[str, ParcelStatus] = {
 }
 
 
+_DATETIME_FORMATS = (
+    "%Y-%m-%d %H:%M:%S",  # TrackingUpdateDate: 2026-11-04 12:08:44
+    "%H:%M %d.%m.%Y",  # DateScan: 12:08 04.11.2026
+    "%d-%m-%Y %H:%M:%S",  # DateCreated: 02-11-2026 14:33:09
+    "%d.%m.%Y %H:%M:%S",
+)
+
+
 def parse_datetime(value: Any) -> datetime | None:
-    """Parse Nova Poshta timestamps such as '05.11.2026 13:24:00'."""
+    """Parse the timestamp formats used by Nova Poshta responses."""
     if not value:
         return None
-    try:
-        return datetime.strptime(str(value), "%d.%m.%Y %H:%M:%S")
-    except ValueError:
-        return None
+    text = str(value).strip()
+    for fmt in _DATETIME_FORMATS:
+        try:
+            return datetime.strptime(text, fmt)
+        except ValueError:
+            continue
+    return None
 
 
 def parse_documents(items: list[dict[str, Any]], carrier_key: str) -> dict[str, ParcelInfo]:
@@ -60,7 +71,8 @@ def parse_documents(items: list[dict[str, Any]], carrier_key: str) -> dict[str, 
             carrier=carrier_key,
             status=STATUS_CODES.get(code, ParcelStatus.UNKNOWN),
             status_text=str(item.get("Status", "")),
-            last_update=parse_datetime(item.get("DateScan")),
+            last_update=parse_datetime(item.get("TrackingUpdateDate"))
+            or parse_datetime(item.get("DateScan")),
             location=item.get("WarehouseRecipient") or item.get("CityRecipient") or None,
         )
     return result
