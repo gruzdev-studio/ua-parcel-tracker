@@ -1,10 +1,10 @@
 {
   "domain": "ua_parcel_tracker",
   "name": "UA Parcel Tracker",
-  "codeowners": ["@your_github"],
+  "codeowners": ["@gruzdev-studio"],
   "config_flow": true,
-  "documentation": "https://github.com/your_github/ha-parcel-tracker",
-  "issue_tracker": "https://github.com/your_github/ha-parcel-tracker/issues",
+  "documentation": "https://github.com/gruzdev-studio/ha-parcel-tracker",
+  "issue_tracker": "https://github.com/gruzdev-studio/ha-parcel-tracker/issues",
   "iot_class": "cloud_polling",
   "requirements": [],
   "version": "0.1.0"
