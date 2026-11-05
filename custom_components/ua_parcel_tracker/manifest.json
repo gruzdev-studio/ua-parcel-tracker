@@ -1,5 +1,5 @@
 {
-  "domain": "parcel_tracker",
+  "domain": "ua_parcel_tracker",
   "name": "UA Parcel Tracker",
   "codeowners": ["@your_github"],
   "config_flow": true,
