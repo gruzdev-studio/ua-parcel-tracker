@@ -1,4 +1,4 @@
-"""Constants for Parcel Tracker."""
+"""Constants for UA Parcel Tracker."""
 
 DOMAIN = "parcel_tracker"
-NAME = "Parcel Tracker"
+NAME = "UA Parcel Tracker"

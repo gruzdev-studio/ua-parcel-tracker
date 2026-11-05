@@ -1,4 +1,4 @@
-# Parcel Tracker для Home Assistant
+# UA Parcel Tracker для Home Assistant
 
 Інтеграція для відстеження посилок у Home Assistant.
 
@@ -15,7 +15,7 @@
 1. Відкрийте HACS → три крапки → **Custom repositories**.
 2. Вкажіть URL репозиторію і оберіть категорію **Integration**.
 3. Встановіть інтеграцію та перезавантажте Home Assistant.
-4. Додайте інтеграцію: **Налаштування → Пристрої та служби → Додати інтеграцію → Parcel Tracker**.
+4. Додайте інтеграцію: **Налаштування → Пристрої та служби → Додати інтеграцію → UA Parcel Tracker**.
 
 ## Розробка
 

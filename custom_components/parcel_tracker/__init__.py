@@ -1,4 +1,4 @@
-"""The Parcel Tracker integration."""
+"""The UA Parcel Tracker integration."""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from .const import DOMAIN
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    """Set up Parcel Tracker from a config entry."""
+    """Set up UA Parcel Tracker from a config entry."""
     hass.data.setdefault(DOMAIN, {})
     hass.data[DOMAIN][entry.entry_id] = {}
     return True

@@ -1,6 +1,6 @@
 {
   "domain": "parcel_tracker",
-  "name": "Parcel Tracker",
+  "name": "UA Parcel Tracker",
   "codeowners": ["@your_github"],
   "config_flow": true,
   "documentation": "https://github.com/your_github/ha-parcel-tracker",

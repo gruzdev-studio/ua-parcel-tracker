@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Parcel Tracker",
+        "title": "UA Parcel Tracker",
         "description": "Set up parcel tracking for Nova Poshta, Ukrposhta and Meest Express?"
       }
     },

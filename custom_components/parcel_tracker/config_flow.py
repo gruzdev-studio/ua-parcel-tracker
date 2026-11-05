@@ -1,4 +1,4 @@
-"""Config flow for Parcel Tracker."""
+"""Config flow for UA Parcel Tracker."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ from .const import DOMAIN, NAME
 
 
 class ParcelTrackerConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Handle a config flow for Parcel Tracker."""
+    """Handle a config flow for UA Parcel Tracker."""
 
     VERSION = 1
 
